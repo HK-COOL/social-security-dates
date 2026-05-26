@@ -97,3 +97,5 @@ and `preview.png`. `robots.txt` points to
 - IndexNow key: `2effdeaf6aad46a2a6b76433467fecc6`
 - IndexNow key location:
   `https://socialsecuritydates.com/2effdeaf6aad46a2a6b76433467fecc6.txt`
+- IndexNow submission: accepted by `https://api.indexnow.org/indexnow` with
+  HTTP 202 for all sitemap URLs on May 26, 2026
