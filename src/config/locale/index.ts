@@ -8,7 +8,7 @@ export const locales = ['en'];
 
 export const defaultLocale = envConfigs.locale;
 
-export const localePrefix = 'as-needed';
+export const localePrefix = 'never';
 
 export const localeDetection = false;
 

@@ -6,11 +6,28 @@ import { routing } from '@/core/i18n/config';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
+function getSingleLocaleResponse(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  const defaultLocalePath = `/${routing.defaultLocale}`;
+
+  if (pathname === defaultLocalePath || pathname.startsWith(`${defaultLocalePath}/`)) {
+    return NextResponse.next();
+  }
+
+  const rewrittenUrl = request.nextUrl.clone();
+  rewrittenUrl.pathname = `${defaultLocalePath}${pathname === '/' ? '' : pathname}`;
+
+  return NextResponse.rewrite(rewrittenUrl);
+}
+
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Handle internationalization first
-  const intlResponse = intlMiddleware(request);
+  const intlResponse =
+    routing.locales.length === 1
+      ? getSingleLocaleResponse(request)
+      : intlMiddleware(request);
 
   // Extract locale from pathname
   const locale = pathname.split('/')[1];
