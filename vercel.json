@@ -8,5 +8,17 @@
       "NEXT_TELEMETRY_DISABLED": "1"
     }
   },
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "https://socialsecuritydates.com",
+    "NEXT_PUBLIC_APP_NAME": "Social Security Dates",
+    "NEXT_PUBLIC_APP_DESCRIPTION": "Check scheduled Social Security and SSI payment dates using public SSA payment rules.",
+    "NEXT_PUBLIC_APP_LOGO": "/logo.png",
+    "NEXT_PUBLIC_APP_FAVICON": "/favicon.ico",
+    "NEXT_PUBLIC_APP_PREVIEW_IMAGE": "/preview.png",
+    "NEXT_PUBLIC_DEFAULT_LOCALE": "en",
+    "NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG": "false",
+    "NEXT_PUBLIC_THEME": "default",
+    "NEXT_PUBLIC_APPEARANCE": "system"
+  },
   "crons": []
 }

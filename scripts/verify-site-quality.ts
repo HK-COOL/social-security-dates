@@ -48,6 +48,8 @@ assert.equal(packageJson.scripts.build, 'next build --webpack');
 assert.equal(vercelJson.framework, 'nextjs');
 assert.equal(vercelJson.buildCommand, 'pnpm build');
 assert.ok(!vercelJson.functions, 'unused API function config should stay removed');
+assert.equal(vercelJson.env.NEXT_PUBLIC_APP_URL, 'https://socialsecuritydates.com');
+assert.equal(vercelJson.env.NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG, 'false');
 assert.match(envExample, /NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG = "false"/);
 assert.match(localeLayout, /NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG/);
 assert.match(localeLayout, /isRuntimeConfigEnabled && \(isProduction \|\| isDebug\)/);
