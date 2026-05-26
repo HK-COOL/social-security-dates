@@ -49,6 +49,8 @@ data*
 _disabled-template-routes/
 .next-dev*.log
 .next-start*.log
+.cdp-proxy*.log
+.gh-auth*.log
 
 *.db
 
