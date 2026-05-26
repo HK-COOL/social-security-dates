@@ -66,7 +66,10 @@ No auth, payment, AI, email, storage, or user database is required for v1.
 
 ## Launch Steps Remaining
 
-- Submit `https://socialsecuritydates.com/sitemap.xml` in Google Search Console and Bing Webmaster after normal browser DNS resolves.
+- Add and verify `socialsecuritydates.com` in Google Search Console, then submit
+  `https://socialsecuritydates.com/sitemap.xml`.
+- Add and verify `https://socialsecuritydates.com/` in Bing Webmaster Tools,
+  then submit `https://socialsecuritydates.com/sitemap.xml`.
 
 ## DNS Status
 
@@ -99,3 +102,8 @@ and `preview.png`. `robots.txt` points to
   `https://socialsecuritydates.com/2effdeaf6aad46a2a6b76433467fecc6.txt`
 - IndexNow submission: accepted by `https://api.indexnow.org/indexnow` with
   HTTP 202 for all sitemap URLs on May 26, 2026
+
+Google Search Console and Bing Webmaster Tools both loaded in the browser with
+logged-in sessions. Automated UI interaction reached the Google ownership
+verification page and the Bing Webmaster dashboard, but adding the new property
+requires manual confirmation in the web UI.
