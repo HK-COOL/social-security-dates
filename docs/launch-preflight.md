@@ -66,9 +66,9 @@ No auth, payment, AI, email, storage, or user database is required for v1.
 
 ## Launch Steps Remaining
 
-- Verify live custom-domain HTML, favicon, preview image, canonical URLs, robots, sitemap, and disclaimer copy.
-- Submit `https://socialsecuritydates.com/sitemap.xml` in Google Search Console and Bing Webmaster.
-- Submit IndexNow after the first production sitemap is live if the deployment workflow supports it.
+- Wait for recursive DNS negative caches to expire for `socialsecuritydates.com`.
+- Submit `https://socialsecuritydates.com/sitemap.xml` in Google Search Console and Bing Webmaster after normal browser DNS resolves.
+- Submit IndexNow if the deployment workflow supports it.
 
 ## DNS Status
 
@@ -84,7 +84,12 @@ The apex record has been created:
 - TTL: Auto
 - Cloudflare record ID: `d4a42898bfd0cebb724b3b3f41e941e4`
 
-Cloudflare API and Cloudflare DNS-over-HTTPS return the A record. Some
-recursive resolvers may still return the earlier no-record response until their
-negative cache expires. Forced-host smoke testing against `76.76.21.21`
-returned HTTP 200 from Vercel for `https://socialsecuritydates.com/`.
+Cloudflare API, Cloudflare DNS-over-HTTPS, and Google DNS-over-HTTPS return the
+A record. Some UDP recursive resolvers may still return the earlier no-record
+response until their negative cache expires.
+
+Forced-host smoke testing against `76.76.21.21` returned HTTP 200 from Vercel
+for `https://socialsecuritydates.com/`. The custom-domain smoke test verified
+the homepage, the 2026 schedule page, `robots.txt`, `sitemap.xml`, `favicon.ico`,
+and `preview.png`. `robots.txt` points to
+`https://socialsecuritydates.com/sitemap.xml`.
