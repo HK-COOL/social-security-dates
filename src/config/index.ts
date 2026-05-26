@@ -5,8 +5,10 @@ import packageJson from '../../package.json';
 
 export type ConfigMap = Record<string, string>;
 
+const defaultAppUrl = 'https://socialsecuritydates.com';
+
 export const envConfigs: ConfigMap = {
-  app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
+  app_url: process.env.NEXT_PUBLIC_APP_URL ?? defaultAppUrl,
   app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'Social Security Dates',
   app_description:
     process.env.NEXT_PUBLIC_APP_DESCRIPTION ??
