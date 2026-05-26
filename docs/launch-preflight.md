@@ -15,7 +15,10 @@ Last updated: May 26, 2026
 - Payment schedule verifier: passed
 - Site quality verifier: passed
 - Production build: passed with `next build --webpack`
-- Local git: initial commit created on `main`
+- Local git: pushed on `main`
+- GitHub repository: `https://github.com/HK-COOL/social-security-dates`
+- Vercel project: `https://vercel.com/hk123s-projects/social-security-dates`
+- Vercel deployment: `https://social-security-dates.vercel.app/` returned HTTP 200
 - Production smoke test:
   - `/`: HTTP 200
   - `/social-security-payment-schedule-2026`: HTTP 200
@@ -63,12 +66,22 @@ No auth, payment, AI, email, storage, or user database is required for v1.
 
 ## Launch Steps Remaining
 
-- Create or connect GitHub repository.
-- GitHub CLI is installed but not logged in on this machine.
-- `GH_TOKEN`, `GITHUB_TOKEN`, and `VERCEL_TOKEN` were not present in the shell environment during preflight.
-- Create Vercel project from the repository.
-- Add production environment variables listed above.
-- Point `socialsecuritydates.com` DNS to the production host.
+- Point `socialsecuritydates.com` DNS to Vercel:
+  - Type: `A`
+  - Name: `@`
+  - Content: `76.76.21.21`
+  - Proxy status: DNS only
+  - TTL: Auto
 - Verify live custom-domain HTML, favicon, preview image, canonical URLs, robots, sitemap, and disclaimer copy.
 - Submit `https://socialsecuritydates.com/sitemap.xml` in Google Search Console and Bing Webmaster.
 - Submit IndexNow after the first production sitemap is live if the deployment workflow supports it.
+
+## DNS Blocker
+
+Cloudflare zone `socialsecuritydates.com` is active on the account
+`fadd8789b4afc4986ce093f29f1d8032`, but DNS records were empty during launch.
+The browser session could read Cloudflare API zone and DNS records, but POST
+requests to create DNS records returned a Cloudflare dashboard 403 challenge.
+The Cloudflare dashboard UI also became stuck on its loading state after
+navigating to the zone DNS records page. Add the DNS record manually in
+Cloudflare if the dashboard loads normally in the user's visible browser.
