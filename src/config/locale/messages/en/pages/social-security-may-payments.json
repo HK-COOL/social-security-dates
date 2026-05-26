@@ -4,7 +4,7 @@
     "description": "Check May 2026 Social Security and SSI payment dates, including birthday-range dates and May 27 payment timing."
   },
   "page": {
-    "show_sections": ["hero", "checker", "guide", "faq", "cta"],
+    "show_sections": ["hero", "checker", "guide", "official_sources", "faq", "cta"],
     "sections": {
       "hero": {
         "id": "hero",
@@ -58,6 +58,35 @@
             "title": "SSI and 3rd rule",
             "description": "May 1, 2026 is the estimated SSI date and also the adjusted date for the May 3 rule because May 3 is a Sunday.",
             "icon": "BadgeDollarSign"
+          }
+        ]
+      },
+      "official_sources": {
+        "block": "official-sources",
+        "id": "official-sources",
+        "title": "Official sources for May payment dates",
+        "description": "Use the checker for quick planning, then use SSA and Treasury pages for official calendar publications, benefit records, and payment-method changes.",
+        "tip": "Social Security Dates is independent and does not collect sensitive personal or banking information.",
+        "items": [
+          {
+            "title": "SSA payment calendar",
+            "description": "Official SSA page for Social Security and SSI payment schedules and calendar publications.",
+            "url": "https://www.ssa.gov/pubs/calendar.htm"
+          },
+          {
+            "title": "SSA 2026 schedule PDF",
+            "description": "SSA Publication No. 05-10031 for 2026 scheduled benefit payment dates.",
+            "url": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf"
+          },
+          {
+            "title": "SSA missing payment FAQ",
+            "description": "Official guidance for late, missing, or stolen Social Security payments.",
+            "url": "https://www.ssa.gov/faqs/en/questions/KA-02423.html"
+          },
+          {
+            "title": "Go Direct",
+            "description": "U.S. Treasury resource for electronic federal benefit payment information.",
+            "url": "https://godirect.gov/gpw/"
           }
         ]
       },

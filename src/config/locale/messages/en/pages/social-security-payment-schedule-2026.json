@@ -4,7 +4,7 @@
     "description": "See how the 2026 Social Security payment schedule works by birthday range, SSI, and pre-May-1997 rules. Use the date checker for your month."
   },
   "page": {
-    "show_sections": ["hero", "checker", "rules", "faq", "cta"],
+    "show_sections": ["hero", "checker", "rules", "official_sources", "faq", "cta"],
     "sections": {
       "hero": {
         "id": "hero",
@@ -65,6 +65,35 @@
             "title": "1st or 3rd rules",
             "description": "SSI is generally paid on the 1st. Social Security before May 1997, or Social Security plus SSI, generally uses the 3rd.",
             "icon": "BadgeDollarSign"
+          }
+        ]
+      },
+      "official_sources": {
+        "block": "official-sources",
+        "id": "official-sources",
+        "title": "Official sources for the 2026 schedule",
+        "description": "Use the checker for quick planning, then use SSA and Treasury pages for official calendar publications, benefit records, and payment-method changes.",
+        "tip": "Social Security Dates is independent and does not collect sensitive personal or banking information.",
+        "items": [
+          {
+            "title": "SSA payment calendar",
+            "description": "Official SSA page for Social Security and SSI payment schedules and calendar publications.",
+            "url": "https://www.ssa.gov/pubs/calendar.htm"
+          },
+          {
+            "title": "SSA 2026 schedule PDF",
+            "description": "SSA Publication No. 05-10031 for 2026 scheduled benefit payment dates.",
+            "url": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf"
+          },
+          {
+            "title": "SSA missing payment FAQ",
+            "description": "Official guidance for late, missing, or stolen Social Security payments.",
+            "url": "https://www.ssa.gov/faqs/en/questions/KA-02423.html"
+          },
+          {
+            "title": "Go Direct",
+            "description": "U.S. Treasury resource for electronic federal benefit payment information.",
+            "url": "https://godirect.gov/gpw/"
           }
         ]
       },

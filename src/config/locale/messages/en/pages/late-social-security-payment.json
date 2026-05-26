@@ -4,7 +4,7 @@
     "description": "If your Social Security payment is late or missing, check the scheduled date and learn the official next steps from SSA."
   },
   "page": {
-    "show_sections": ["hero", "checker", "steps", "faq", "cta"],
+    "show_sections": ["hero", "checker", "steps", "official_sources", "faq", "cta"],
     "sections": {
       "hero": {
         "id": "hero",
@@ -58,6 +58,35 @@
               "src": "/preview.png",
               "alt": "Contact Social Security"
             }
+          }
+        ]
+      },
+      "official_sources": {
+        "block": "official-sources",
+        "id": "official-sources",
+        "title": "Official sources for late payments",
+        "description": "Use the checker for quick planning, then use SSA and Treasury pages for official calendar publications, benefit records, and payment-method changes.",
+        "tip": "Social Security Dates is independent and does not collect sensitive personal or banking information.",
+        "items": [
+          {
+            "title": "SSA payment calendar",
+            "description": "Official SSA page for Social Security and SSI payment schedules and calendar publications.",
+            "url": "https://www.ssa.gov/pubs/calendar.htm"
+          },
+          {
+            "title": "SSA 2026 schedule PDF",
+            "description": "SSA Publication No. 05-10031 for 2026 scheduled benefit payment dates.",
+            "url": "https://www.ssa.gov/pubs/EN-05-10031-2026.pdf"
+          },
+          {
+            "title": "SSA missing payment FAQ",
+            "description": "Official guidance for late, missing, or stolen Social Security payments.",
+            "url": "https://www.ssa.gov/faqs/en/questions/KA-02423.html"
+          },
+          {
+            "title": "Go Direct",
+            "description": "U.S. Treasury resource for electronic federal benefit payment information.",
+            "url": "https://godirect.gov/gpw/"
           }
         ]
       },

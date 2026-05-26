@@ -26,3 +26,4 @@ export * from './blog';
 export * from './blog-detail';
 export * from './page-detail';
 export * from './payment-date-checker';
+export * from './official-sources';

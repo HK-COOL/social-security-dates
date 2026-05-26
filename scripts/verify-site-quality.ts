@@ -25,6 +25,17 @@ const vercelJson = JSON.parse(read('vercel.json'));
 const robots = read('src/app/robots.ts');
 const envExample = read('.env.example');
 const localeLayout = read('src/app/[locale]/layout.tsx');
+const landingPage = read('src/app/[locale]/(landing)/page.tsx');
+const dynamicPage = read('src/app/[locale]/(landing)/[...slug]/page.tsx');
+const blockIndex = read('src/themes/default/blocks/index.tsx');
+const officialSourcesBlock = read('src/themes/default/blocks/official-sources.tsx');
+const jsonLdHelper = read('src/shared/lib/social-security-json-ld.ts');
+const officialSourceUrls = [
+  'https://www.ssa.gov/pubs/calendar.htm',
+  'https://www.ssa.gov/pubs/EN-05-10031-2026.pdf',
+  'https://www.ssa.gov/faqs/en/questions/KA-02423.html',
+  'https://godirect.gov/gpw/',
+];
 
 assert.match(landing, /Social Security Dates/);
 assert.match(common, /Social Security Payment Schedule 2026/);
@@ -38,9 +49,20 @@ assert.ok(!vercelJson.functions, 'unused API function config should stay removed
 assert.match(envExample, /NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG = "false"/);
 assert.match(localeLayout, /NEXT_PUBLIC_ENABLE_RUNTIME_CONFIG/);
 assert.match(localeLayout, /isRuntimeConfigEnabled && \(isProduction \|\| isDebug\)/);
+assert.match(blockIndex, /official-sources/);
+assert.match(officialSourcesBlock, /Official source links/);
+assert.match(landingPage, /application\/ld\+json/);
+assert.match(dynamicPage, /application\/ld\+json/);
+assert.match(jsonLdHelper, /FAQPage/);
+assert.match(jsonLdHelper, /WebApplication/);
 assert.match(robots, /sitemap: `\$\{appUrl\}\/sitemap\.xml`/);
 assert.match(sitemap, /https:\/\/socialsecuritydates\.com\//);
 assert.doesNotMatch(sitemap, /privacy-policy|terms-of-service|admin|api|settings/);
+
+for (const sourceUrl of officialSourceUrls) {
+  assert.match(home, new RegExp(sourceUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  assert.match(jsonLdHelper, new RegExp(sourceUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+}
 
 for (const slug of pageSlugs) {
   const relativePath = `src/config/locale/messages/en/pages/${slug}.json`;
@@ -51,7 +73,12 @@ for (const slug of pageSlugs) {
   assert.match(content, /"metadata"/);
   assert.match(content, /"hero"/);
   assert.match(content, /"faq"/);
+  assert.match(content, /"official_sources"/);
   assert.match(content, /Independent tool/);
+
+  for (const sourceUrl of officialSourceUrls) {
+    assert.match(content, new RegExp(sourceUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
 }
 
 for (const asset of ['public/logo.png', 'public/favicon.ico', 'public/preview.png']) {

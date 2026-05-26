@@ -3,7 +3,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
 import { envConfigs } from '@/config';
+import {
+  buildSocialSecurityJsonLd,
+  stringifyJsonLd,
+} from '@/shared/lib/social-security-json-ld';
 import { getLocalPage } from '@/shared/models/post';
+import type { DynamicPage as DynamicPageType } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
 
@@ -11,7 +16,7 @@ export const revalidate = 3600;
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string | string[] }>;
 }) {
   const { locale, slug } = await params;
 
@@ -97,7 +102,7 @@ export async function generateMetadata({
 export default async function DynamicPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string | string[] }>;
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -140,7 +145,24 @@ export default async function DynamicPage({
     // return dynamic page
     if (t.has('page')) {
       const Page = await getThemePage('dynamic-page');
-      return <Page locale={locale} page={t.raw('page')} />;
+      const page: DynamicPageType = t.raw('page');
+      const metadata = t.has('metadata') ? t.raw('metadata') : undefined;
+      const jsonLd = buildSocialSecurityJsonLd({
+        appUrl: envConfigs.app_url,
+        path: staticPageSlug,
+        page,
+        metadata,
+      });
+
+      return (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: stringifyJsonLd(jsonLd) }}
+          />
+          <Page locale={locale} page={page} />
+        </>
+      );
     }
   } catch (error) {
     // ignore error if translation not found
