@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "SSI Payment Schedule 2026 | Check SSI Payment Dates",
+    "description": "Estimate SSI payment dates for 2026 and 2027. Learn why SSI can arrive before the 1st when the date falls on a weekend or federal holiday."
+  },
+  "page": {
+    "show_sections": ["hero", "checker", "rules", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SSI Payment Schedule",
+        "highlight_text": "SSI",
+        "description": "SSI is usually scheduled for the 1st of the month. When the 1st falls on a weekend or federal holiday, the payment is usually scheduled earlier.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check SSI date",
+            "icon": "BadgeDollarSign",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Check an SSI payment date",
+        "description": "Select SSI only or Social Security + SSI to estimate scheduled dates for a month."
+      },
+      "rules": {
+        "block": "features-list",
+        "id": "rules",
+        "title": "Why SSI sometimes comes early",
+        "description": "SSI follows a simple monthly rule, but weekends and federal holidays can move the scheduled date earlier.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "SSI payment schedule"
+        },
+        "items": [
+          {
+            "title": "Usually the 1st",
+            "description": "SSI is generally scheduled on the 1st day of the month.",
+            "icon": "CalendarDays"
+          },
+          {
+            "title": "Weekend adjustment",
+            "description": "If the 1st is a Saturday or Sunday, the scheduled date usually moves to the previous Friday.",
+            "icon": "CalendarClock"
+          },
+          {
+            "title": "Holiday adjustment",
+            "description": "If the 1st is a federal holiday, the scheduled date can move to the previous business day.",
+            "icon": "Clock"
+          },
+          {
+            "title": "Not benefit management",
+            "description": "This site cannot update direct deposit, Direct Express, or benefit records.",
+            "icon": "ShieldCheck"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "SSI payment FAQ",
+        "description": "Common SSI schedule questions.",
+        "items": [
+          {
+            "question": "Why are there sometimes two SSI payments in one month?",
+            "answer": "When the next month's 1st falls on a weekend or holiday, that payment may be scheduled at the end of the prior month. It is usually an early payment for the next month, not an extra benefit."
+          },
+          {
+            "question": "What if I receive SSI and Social Security?",
+            "answer": "The checker can show both estimated dates. SSI usually follows the 1st rule, while Social Security often follows the 3rd rule for people receiving both."
+          },
+          {
+            "question": "Where should I change direct deposit?",
+            "answer": "Use official SSA.gov or GoDirect.gov channels. This tool does not collect bank information."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Estimate your SSI date",
+        "description": "Use the checker without sharing sensitive personal or banking information.",
+        "buttons": [
+          {
+            "title": "Check SSI date",
+            "icon": "BadgeDollarSign",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}

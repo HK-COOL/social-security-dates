@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Late Social Security Payment? What to Check First",
+    "description": "If your Social Security payment is late or missing, check the scheduled date and learn the official next steps from SSA."
+  },
+  "page": {
+    "show_sections": ["hero", "checker", "steps", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Late Social Security Payment?",
+        "highlight_text": "Late",
+        "description": "First confirm the scheduled date. If an electronic payment does not arrive on the scheduled pay date, SSA says to contact your bank or financial institution first.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check scheduled date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Confirm the scheduled payment date",
+        "description": "Use the checker to estimate the scheduled date before deciding whether the payment is late."
+      },
+      "steps": {
+        "block": "features-step",
+        "id": "steps",
+        "title": "What to check before reporting a missing payment",
+        "description": "This site cannot report a payment issue for you. Use official channels for anything involving your benefit record.",
+        "items": [
+          {
+            "title": "Check the scheduled date",
+            "description": "Make sure the date has passed and remember that weekends and federal holidays can move scheduled dates earlier.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Check scheduled payment date"
+            }
+          },
+          {
+            "title": "Contact your bank first",
+            "description": "SSA says to contact your bank or financial institution first for electronic payments that do not arrive on the scheduled date.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Contact your bank first"
+            }
+          },
+          {
+            "title": "Contact Social Security",
+            "description": "If you still need to report a late, missing, or stolen payment, contact Social Security directly through official channels.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Contact Social Security"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Late payment FAQ",
+        "description": "Important limits and next steps.",
+        "items": [
+          {
+            "question": "Can this site report a missing payment?",
+            "answer": "No. This site only estimates scheduled dates. It cannot file a case, access your record, or contact SSA for you."
+          },
+          {
+            "question": "What phone number does SSA list for missing payments?",
+            "answer": "SSA lists 1-800-772-1213 and TTY 1-800-325-0778 for late, missing, or stolen Social Security payments after checking with your bank."
+          },
+          {
+            "question": "Should I enter bank information here?",
+            "answer": "No. This checker never asks for bank account, routing number, Direct Express details, SSN, or login information."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Start with the scheduled date",
+        "description": "Then use official SSA and bank channels for anything involving your account or payment status.",
+        "buttons": [
+          {
+            "title": "Check date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}

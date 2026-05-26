@@ -1,0 +1,154 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "Social Security Dates",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Social Security Dates",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Checker",
+          "url": "/#checker",
+          "icon": "CalendarDays"
+        },
+        {
+          "title": "2026 Schedule",
+          "url": "/social-security-payment-schedule-2026",
+          "icon": "CalendarRange"
+        },
+        {
+          "title": "SSI",
+          "url": "/ssi-payment-schedule",
+          "icon": "BadgeDollarSign"
+        },
+        {
+          "title": "Late Payment",
+          "url": "/late-social-security-payment",
+          "icon": "CircleHelp"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": false,
+      "show_credits": false,
+      "show_sign_out": false,
+      "items": []
+    },
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": false,
+    "topbanner": {
+      "text": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration."
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "Social Security Dates",
+      "description": "Check scheduled Social Security and SSI payment dates using public SSA payment rules. Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Social Security Dates",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Tools",
+          "children": [
+            {
+              "title": "Payment Date Checker",
+              "url": "/#checker",
+              "target": "_self"
+            },
+            {
+              "title": "2026 Payment Schedule",
+              "url": "/social-security-payment-schedule-2026",
+              "target": "_self"
+            },
+            {
+              "title": "SSI Payment Schedule",
+              "url": "/ssi-payment-schedule",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Guides",
+          "children": [
+            {
+              "title": "When will I get my check?",
+              "url": "/when-will-i-get-my-social-security-check",
+              "target": "_self"
+            },
+            {
+              "title": "May payments",
+              "url": "/social-security-may-payments",
+              "target": "_self"
+            },
+            {
+              "title": "Late or missing payment",
+              "url": "/late-social-security-payment",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Official Resources",
+          "children": [
+            {
+              "title": "SSA payment calendar",
+              "url": "https://www.ssa.gov/pubs/calendar.htm",
+              "target": "_blank"
+            },
+            {
+              "title": "SSA.gov",
+              "url": "https://www.ssa.gov/",
+              "target": "_blank"
+            },
+            {
+              "title": "Go Direct",
+              "url": "https://godirect.gov/gpw/",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:hello@socialsecuritydates.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": false
+  }
+}

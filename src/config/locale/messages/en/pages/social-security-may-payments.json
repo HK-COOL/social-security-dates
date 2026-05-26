@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Social Security May Payments | May 2026 Payment Dates",
+    "description": "Check May 2026 Social Security and SSI payment dates, including birthday-range dates and May 27 payment timing."
+  },
+  "page": {
+    "show_sections": ["hero", "checker", "guide", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Social Security May Payments",
+        "highlight_text": "May Payments",
+        "description": "Use the checker to estimate May Social Security and SSI payment dates, including which birthday range maps to May 27, 2026.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check May date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Check a May payment date",
+        "description": "Select May 2026 in the checker and choose the benefit type that matches your situation."
+      },
+      "guide": {
+        "block": "features-list",
+        "id": "guide",
+        "title": "Who is scheduled around May 27, 2026?",
+        "description": "May 27, 2026 is the fourth Wednesday of May. Under the standard schedule, that date applies to many Social Security recipients with birthdays from the 21st through the 31st.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "May 2026 Social Security payments"
+        },
+        "items": [
+          {
+            "title": "May 13",
+            "description": "Second Wednesday for birthdays 1-10 under the standard Social Security schedule.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "May 20",
+            "description": "Third Wednesday for birthdays 11-20 under the standard Social Security schedule.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "May 27",
+            "description": "Fourth Wednesday for birthdays 21-31 under the standard Social Security schedule.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "SSI and 3rd rule",
+            "description": "May 1, 2026 is the estimated SSI date and also the adjusted date for the May 3 rule because May 3 is a Sunday.",
+            "icon": "BadgeDollarSign"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "May payment FAQ",
+        "description": "Common May payment questions.",
+        "items": [
+          {
+            "question": "Is May 27, 2026 for every Social Security recipient?",
+            "answer": "No. It is the fourth Wednesday, so it generally applies to the standard birthday range of 21-31. Other benefit situations can have different dates."
+          },
+          {
+            "question": "Why can May 3 payments be earlier?",
+            "answer": "May 3, 2026 is a Sunday. Scheduled payments that fall on weekends are generally moved to the previous business day."
+          },
+          {
+            "question": "Should I enter my full birthday?",
+            "answer": "No. Use only the birthday range. This checker never needs your full date of birth."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Check your May schedule",
+        "description": "Use the checker for your benefit type and birthday range.",
+        "buttons": [
+          {
+            "title": "Open checker",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}

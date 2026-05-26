@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "When Will I Get My Social Security Check? | Payment Date Checker",
+    "description": "Estimate when you will get your Social Security check by benefit type, birthday range, and month. No SSN, bank information, or login required."
+  },
+  "page": {
+    "show_sections": ["hero", "checker", "guide", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "When Will I Get My Social Security Check?",
+        "highlight_text": "Social Security Check",
+        "description": "For most recipients, your scheduled date depends on your birthday range. Use the checker below for a quick estimate.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check my date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Estimate when your check is scheduled",
+        "description": "Choose the situation that matches you. The checker does not ask for your SSN, full birthday, bank information, or login."
+      },
+      "guide": {
+        "block": "features-list",
+        "id": "guide",
+        "title": "What determines your payment date",
+        "description": "The main difference is whether you receive regular Social Security only, SSI only, both benefits, or Social Security that began before May 1997.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "Find my Social Security check date"
+        },
+        "items": [
+          {
+            "title": "Birthday range",
+            "description": "Most post-May-1997 Social Security payments are scheduled by birthday range.",
+            "icon": "CalendarDays"
+          },
+          {
+            "title": "SSI status",
+            "description": "SSI usually follows the 1st-of-the-month schedule.",
+            "icon": "BadgeDollarSign"
+          },
+          {
+            "title": "Both benefits",
+            "description": "People receiving both Social Security and SSI often have two scheduled dates.",
+            "icon": "ListChecks"
+          },
+          {
+            "title": "Bank posting",
+            "description": "Your bank or Direct Express posting time can differ from the scheduled date.",
+            "icon": "Building2"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Payment date questions",
+        "description": "Helpful context before you rely on a date estimate.",
+        "items": [
+          {
+            "question": "Do I need my exact birthday?",
+            "answer": "No. This checker only uses birthday ranges: 1-10, 11-20, or 21-31."
+          },
+          {
+            "question": "Can I use this for disability or survivors benefits?",
+            "answer": "Yes, if your payment follows the standard Social Security schedule. Some special cases may differ, so confirm unusual situations with SSA."
+          },
+          {
+            "question": "Does this mean the money is in my bank account?",
+            "answer": "No. It estimates the scheduled payment date. Your bank or Direct Express card may have separate posting timing."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Check the date for your situation",
+        "description": "Use the payment date checker and avoid entering sensitive information anywhere except official channels.",
+        "buttons": [
+          {
+            "title": "Open checker",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}

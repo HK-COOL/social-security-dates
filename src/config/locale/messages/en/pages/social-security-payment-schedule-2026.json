@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "Social Security Payment Schedule 2026 | Dates by Birthday",
+    "description": "See how the 2026 Social Security payment schedule works by birthday range, SSI, and pre-May-1997 rules. Use the date checker for your month."
+  },
+  "page": {
+    "show_sections": ["hero", "checker", "rules", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Social Security Payment Schedule 2026",
+        "highlight_text": "2026",
+        "description": "Most Social Security payments in 2026 follow the second, third, or fourth Wednesday rule based on birthday range. SSI and older benefit cases use different scheduled dates.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check a 2026 date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "Read SSI schedule",
+            "icon": "BadgeDollarSign",
+            "url": "/ssi-payment-schedule",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": false
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Check a 2026 Social Security payment date",
+        "description": "Choose your benefit type, birthday range, and payment month to estimate the scheduled payment date."
+      },
+      "rules": {
+        "block": "features-list",
+        "id": "rules",
+        "title": "2026 payment rules at a glance",
+        "description": "The public SSA schedule separates most Social Security payments by birthday range. SSI and pre-May-1997 cases are handled separately.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "2026 Social Security payment schedule"
+        },
+        "items": [
+          {
+            "title": "Second Wednesday",
+            "description": "For most Social Security recipients with birthdays from the 1st through the 10th.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "Third Wednesday",
+            "description": "For most Social Security recipients with birthdays from the 11th through the 20th.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "Fourth Wednesday",
+            "description": "For most Social Security recipients with birthdays from the 21st through the 31st.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "1st or 3rd rules",
+            "description": "SSI is generally paid on the 1st. Social Security before May 1997, or Social Security plus SSI, generally uses the 3rd.",
+            "icon": "BadgeDollarSign"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "2026 Social Security schedule FAQ",
+        "description": "Common questions about 2026 payment timing.",
+        "items": [
+          {
+            "question": "Does everyone get paid on the same date?",
+            "answer": "No. Most Social Security payment dates depend on birthday range, while SSI and pre-May-1997 cases follow separate rules."
+          },
+          {
+            "question": "What happens when a payment date is a federal holiday?",
+            "answer": "SSA schedules payments earlier when a normal payment date falls on a weekend or federal legal holiday."
+          },
+          {
+            "question": "Can this site confirm that SSA issued my payment?",
+            "answer": "No. The checker estimates scheduled dates only. It cannot see SSA records, bank posting status, or Direct Express activity."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Find your 2026 payment date",
+        "description": "Use the checker with your benefit type, birthday range, and month.",
+        "buttons": [
+          {
+            "title": "Use the checker",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}

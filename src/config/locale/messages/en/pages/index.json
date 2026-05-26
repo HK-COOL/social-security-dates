@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "title": "Social Security Payment Schedule 2026 | Check Your Payment Date",
+    "description": "Use a simple Social Security payment date checker for 2026 and 2027. Estimate Social Security and SSI payment dates without entering SSN, bank information, or full date of birth."
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "checker",
+      "rules",
+      "schedule",
+      "trust",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Social Security Payment Schedule 2026",
+        "highlight_text": "Payment Schedule",
+        "description": "Check scheduled Social Security and SSI payment dates by benefit type, birthday range, and month. No SSN, no bank information, and no login required.",
+        "tip": "Independent tool. Not affiliated with, endorsed by, or operated by the Social Security Administration.",
+        "buttons": [
+          {
+            "title": "Check my date",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "View 2026 schedule",
+            "icon": "CalendarRange",
+            "url": "/social-security-payment-schedule-2026",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": false,
+        "show_award": false,
+        "image": {
+          "src": "/preview.png",
+          "alt": "Social Security Dates payment schedule checker",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "checker": {
+        "block": "payment-date-checker",
+        "id": "checker",
+        "title": "Check your Social Security payment date",
+        "description": "Select your benefit type, birthday range, and month to estimate your scheduled payment date from public SSA payment rules."
+      },
+      "rules": {
+        "block": "features-list",
+        "id": "rules",
+        "title": "How the Social Security payment schedule works",
+        "description": "Most Social Security payments are sent on the second, third, or fourth Wednesday of each month, depending on birthday range. SSI and pre-May-1997 cases follow separate rules.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "Payment schedule rules"
+        },
+        "items": [
+          {
+            "title": "Birthdays 1st-10th",
+            "description": "Usually paid on the second Wednesday of the month.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "Birthdays 11th-20th",
+            "description": "Usually paid on the third Wednesday of the month.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "Birthdays 21st-31st",
+            "description": "Usually paid on the fourth Wednesday of the month.",
+            "icon": "CalendarCheck"
+          },
+          {
+            "title": "SSI and older cases",
+            "description": "SSI is usually paid on the 1st. Pre-May-1997 Social Security is usually paid on the 3rd.",
+            "icon": "BadgeDollarSign"
+          }
+        ]
+      },
+      "schedule": {
+        "block": "features-step",
+        "id": "schedule",
+        "title": "Fast answers for common payment questions",
+        "description": "Start with the checker, then use the guides if you need context for SSI, May payments, or a late payment.",
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Choose a month",
+            "description": "Pick any supported 2026 or 2027 payment month.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Choose a month"
+            }
+          },
+          {
+            "title": "Choose your situation",
+            "description": "Select Social Security, SSI, both benefits, or the pre-May-1997 rule.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Choose a benefit type"
+            }
+          },
+          {
+            "title": "Read the estimate",
+            "description": "Use the scheduled date as a planning aid, not as a guarantee from SSA or your bank.",
+            "image": {
+              "src": "/preview.png",
+              "alt": "Read the payment estimate"
+            }
+          }
+        ]
+      },
+      "trust": {
+        "block": "features-list",
+        "id": "trust",
+        "title": "Built for privacy and clarity",
+        "description": "Payment dates are a high-trust topic. This tool stays narrow: it estimates dates only and points you to official SSA channels for benefit, identity, or banking changes.",
+        "image": {
+          "src": "/preview.png",
+          "alt": "Privacy-first payment date checker"
+        },
+        "items": [
+          {
+            "title": "No sensitive data",
+            "description": "No Social Security number, full date of birth, bank account, routing number, address, phone, or email.",
+            "icon": "ShieldCheck"
+          },
+          {
+            "title": "Public rules only",
+            "description": "Uses SSA's public payment calendar rules and federal holiday adjustments.",
+            "icon": "FileText"
+          },
+          {
+            "title": "Not a payment portal",
+            "description": "The site does not enroll direct deposit, update benefits, or contact SSA for you.",
+            "icon": "LockKeyhole"
+          },
+          {
+            "title": "Official links included",
+            "description": "For account, payment method, missing payment, or identity questions, use SSA.gov or GoDirect.gov.",
+            "icon": "ExternalLink"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Social Security payment date FAQ",
+        "description": "Short answers for people checking scheduled Social Security or SSI dates.",
+        "items": [
+          {
+            "question": "When will I get my Social Security check?",
+            "answer": "For most people who started receiving Social Security after May 1997, the date depends on birthday range: second Wednesday for birthdays 1-10, third Wednesday for 11-20, and fourth Wednesday for 21-31."
+          },
+          {
+            "question": "When is SSI paid?",
+            "answer": "SSI is usually paid on the 1st of the month. If the 1st falls on a weekend or federal holiday, the scheduled date is usually moved to the previous business day."
+          },
+          {
+            "question": "What if I receive both Social Security and SSI?",
+            "answer": "SSA generally schedules SSI on the 1st and Social Security on the 3rd for people who receive both, with weekend and federal holiday adjustments."
+          },
+          {
+            "question": "Is this an official SSA tool?",
+            "answer": "No. Social Security Dates is independent and is not affiliated with, endorsed by, or operated by the Social Security Administration."
+          },
+          {
+            "question": "What should I do if my payment is late?",
+            "answer": "For electronic payments, SSA says to check with your bank or financial institution first. If you still need help, contact Social Security directly."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Check your scheduled payment date",
+        "description": "Use the checker for a quick estimate, then confirm benefit or account questions only through official SSA channels.",
+        "buttons": [
+          {
+            "title": "Open checker",
+            "icon": "CalendarDays",
+            "url": "/#checker",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    }
+  }
+}
